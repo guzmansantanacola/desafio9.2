@@ -9,8 +9,5 @@ document.getElementById("buttonText").addEventListener("click", function(){
    
     let dato = document.getElementById("inputText").value;
     datos.push(dato);    
-});
-
-document.getElementById("buttonText").addEventListener("click", function(){
-localStorage.setItem("textdata", JSON.stringify(datos))
+    localStorage.setItem("textdata", JSON.stringify(datos))
 });
